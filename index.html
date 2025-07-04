@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Job Assistant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+      background: white;
+      margin: 20px;
+      border-radius: 8px;
+    }
+    input, select, textarea, button {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+      max-width: 600px;
+    }
+    .step {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #004080;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Global Job Application Assistant</h1>
+    <p>Get step-by-step guidance for landing jobs in the UK, Dubai, India, and more</p>
+  </header>
+
+  <section class="step">
+    <h2>Step 1: Choose Target Country</h2>
+    <select id="country">
+      <option value="">--Select Country--</option>
+      <option value="UK">United Kingdom</option>
+      <option value="Dubai">Dubai</option>
+      <option value="India">India</option>
+    </select>
+  </section>
+
+  <section class="step">
+    <h2>Step 2: Enter Your Personal and Professional Details</h2>
+    <input type="text" placeholder="Full Name" />
+    <input type="email" placeholder="Email Address" />
+    <input type="url" placeholder="LinkedIn Profile URL" />
+    <input type="url" placeholder="Portfolio or GitHub URL" />
+    <textarea placeholder="Work Experience (add details per job)"></textarea>
+    <textarea placeholder="Certifications with URLs"></textarea>
+    <textarea placeholder="Projects with Descriptions and Links"></textarea>
+    <textarea placeholder="Skills (Comma Separated)"></textarea>
+    <textarea placeholder="Qualifications (e.g., ACCA, MBA)"></textarea>
+  </section>
+
+  <section class="step">
+    <h2>Step 3: Upload or Paste Job Description</h2>
+    <textarea placeholder="Paste the full job description here..."></textarea>
+  </section>
+
+  <section class="step">
+    <h2>Step 4: Customize and Generate CV</h2>
+    <p>Your CV will follow an ATS-friendly UK format (F-style layout, no tables/charts).</p>
+    <p>Select template style:</p>
+    <select>
+      <option>Classic UK ATS Template</option>
+      <option>Modern F-Layout</option>
+      <option>Minimalist Professional</option>
+    </select>
+    <button>Generate CV</button>
+    <p>Changes made based on job description will be listed below:</p>
+    <ul>
+      <li>Keyword highlights from job description</li>
+      <li>Tailored certifications or skills added/removed</li>
+    </ul>
+  </section>
+
+  <section class="step">
+    <h2>Step 5: Auto-Cover Letter Generator</h2>
+    <button>Generate Cover Letter</button>
+  </section>
+
+  <section class="step">
+    <h2>Step 6: CV Scoring</h2>
+    <p>Paste your final CV here for ATS score and feedback</p>
+    <textarea placeholder="Paste your CV content here..."></textarea>
+    <button>Scan & Score CV</button>
+  </section>
+
+  <section class="step">
+    <h2>Step 7: Interview Preparation</h2>
+    <input type="text" placeholder="Enter job role" />
+    <button>Get Interview Q&A</button>
+    <p>Upload meeting link for interview assistance (Note: Interview helper will stay hidden from interviewer)</p>
+    <input type="url" placeholder="Paste Meeting URL (Zoom, Teams, etc.)" />
+  </section>
+
+  <section class="step">
+    <h2>Step 8: Job Tracking and Auto-Application</h2>
+    <button>Track My Applications</button>
+    <button>Enable Auto-Apply Mode</button>
+    <p>This connects to Indeed, Reed.co.uk, NIJobs and more</p>
+  </section>
+
+  <section class="step">
+    <h2>Step 9: Full UK Job Guide</h2>
+    <p>Step-by-step guide for getting a job in the UK:</p>
+    <ul>
+      <li>CV preparation tips</li>
+      <li>Cover letter strategies</li>
+      <li>Visa requirements</li>
+      <li>Job search techniques</li>
+      <li>Interview etiquette</li>
+    </ul>
+    <button>Download Full UK Job Guide</button>
+  </section>
+</body>
+</html>
